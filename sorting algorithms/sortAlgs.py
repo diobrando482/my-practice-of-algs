@@ -93,4 +93,6 @@ class Solution:
                 if pref_len == 0:
                     return ''
                 pref = pref[0:pref_len]
-            return pref
+            return preff
+        
+main = 'hello'
