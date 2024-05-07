@@ -47,3 +47,50 @@
 // };
 // выучил я эту задачу на leetcode постоянно там практикуюсь 
 //постараюсь выполнить как можно больше задач и решать их максимально продуктивно для меня 
+// let array = [1,2,3,45,2,3,234,1]
+
+// const quickSort =(array)=>{
+//     let clonedArr =[...array];
+//     if(clonedArr.length<=1){ 
+//         return clonedArr;
+//     }
+//     let pivot = array[0]
+//     let left = []
+//     let right = []
+
+//     for(let i =1; i<clonedArr.length; i++){
+//         if(clonedArr[i] <pivot){
+//             left.push(clonedArr[i])
+//         }else{
+//             right.push(clonedArr[i])
+//         }
+        
+//     }
+//     // return [...left pivot ...right]
+// }
+// console.log(quickSort(array))
+let array = [4,34,623,65,-10, 52]
+
+const quickSort = (arr) => {
+  let clonedArr = [...arr];
+  
+  if(clonedArr.length <= 1) {
+    return clonedArr;
+  }
+  
+  let pivot = arr[0];
+  let leftArr = [];
+  let rightArr = [];
+  
+  for(let i=1; i<clonedArr.length; i++) {
+    if(clonedArr[i] < pivot) {
+      leftArr.push(clonedArr[i])
+    } else {
+      rightArr.push(clonedArr[i])
+    }
+  }
+  
+  return [...quickSort(leftArr), pivot, ...quickSort(rightArr)]
+}
+
+quickSort(array);

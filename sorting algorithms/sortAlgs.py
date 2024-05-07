@@ -81,18 +81,18 @@
 #     values = [5, 2, 9, 1,  6]
 #     print("Before sorting:", values)
 #     quick_sort(values)
-#     print("After sorting:", values)
+# #     print("After sorting:", values)
 
-class Solution:
-    def longestCommonPrefix(self,strs: list[str])->str:
-        pref = strs[0]
-        pref_len = len(pref)
-        for s in strs[1:]:
-            while pref != s[0:pref_len]:
-                pref_len -= 1
-                if pref_len == 0:
-                    return ''
-                pref = pref[0:pref_len]
-            return preff
+# class Solution:
+#     def longestCommonPrefix(self,strs: list[str])->str:
+#         pref = strs[0]
+#         pref_len = len(pref)
+#         for s in strs[1:]:
+#             while pref != s[0:pref_len]:
+#                 pref_len -= 1
+#                 if pref_len == 0:
+#                     return ''
+#                 pref = pref[0:pref_len]
+#             return pref
         
-main = 'hello'
+# # main = 'hello'
