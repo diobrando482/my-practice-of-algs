@@ -69,28 +69,36 @@
 //     // return [...left pivot ...right]
 // }
 // console.log(quickSort(array))
-let array = [4,34,623,65,-10, 52]
+// let array = [4,34,623,65,-10, 52]
 
-const quickSort = (arr) => {
-  let clonedArr = [...arr];
+// const quickSort = (arr) => {
+//   let clonedArr = [...arr];
   
-  if(clonedArr.length <= 1) {
-    return clonedArr;
-  }
+//   if(clonedArr.length <= 1) {
+//     return clonedArr;
+//   }
   
-  let pivot = arr[0];
-  let leftArr = [];
-  let rightArr = [];
+//   let pivot = arr[0];
+//   let leftArr = [];
+//   let rightArr = [];
   
-  for(let i=1; i<clonedArr.length; i++) {
-    if(clonedArr[i] < pivot) {
-      leftArr.push(clonedArr[i])
-    } else {
-      rightArr.push(clonedArr[i])
-    }
-  }
-  
-  return [...quickSort(leftArr), pivot, ...quickSort(rightArr)]
-}
-
-quickSort(array);
+//   for(let i=1; i<clonedArr.length; i++) {
+//     if(clonedArr[i] < pivot) {
+//       leftArr.push(clonedArr[i])
+//     } else {
+//       rightArr.push(clonedArr[i])
+//     }
+//   }
+//   return [...quickSort(leftArr), pivot, ...quickSort(rightArr)]
+// }
+// quickSort(array);
+// function fetchData(call){
+//     setTimeout(()=>{
+//         console.log('data fetched')
+//         call('data')
+//     }, 2000)
+// }
+// function proccess(data){
+//     console.log('processing'+ data);
+// }
+// fetchData(proccess)
